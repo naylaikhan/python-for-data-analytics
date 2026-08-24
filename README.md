@@ -27,20 +27,19 @@ The goal of this repository is to:
 * [ ] Data Types
 * [ ] Strings
 * [ ] String Formatting
-* [ ] Operators — Part 1
+* [ ] Operators
 * [ ] Conditional Statements
 * [ ] Lists
 * [ ] Dictionaries
 * [ ] Sets
 * [ ] Tuples
-* [ ] Operators — Part 2
 * [ ] Loops
 * [ ] List Comprehensions
-* [ ] Exercise — Python Basics
+* [ ] Exercise - Python Basics
 * [ ] Functions
 * [ ] Lambda Functions
 * [ ] Modules
-* [ ] Exercise — Python Library
+* [ ] Exercise - Python Library
 * [ ] Python Libraries
 * [ ] Classes
 
