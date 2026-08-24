@@ -1,6 +1,6 @@
 Strings
 
-What it covers: Text data handling — the foundation of almost every data-cleaning task an analyst performs.
+What it covers: Text data handling - the foundation of almost every data-cleaning task an analyst performs.
 
 Core Concepts
 Strings as an ordered sequence of characters (indexing starts at 0)
