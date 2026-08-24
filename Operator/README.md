@@ -5,8 +5,8 @@ What it covers: The "verbs" of Python - how to perform calculations, comparisons
 Core Concepts
 Arithmetic operators: + - * / // % **
 Comparison operators: > < == != >= <= → always return a Boolean
-Logical operators: and, or, not — combining multiple conditions
-Assignment operators: += -= *= — shortcuts for updating variables
+Logical operators: and, or, not - combining multiple conditions
+Assignment operators: += -= *= - shortcuts for updating variables
 Membership operator: in / not in
 Why It Matters for Data Analysis
 
