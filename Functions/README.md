@@ -1,453 +1,458 @@
-# Python List Comprehensions - 50 Practice Questions
+## Python Functions - Practice Questions
 
-## 📌 About This Repository
+This section is part of my **Python for Data Analytics** learning journey.
 
-This repository contains **50 practice questions on Python List Comprehensions**, designed to help beginners improve their understanding of Python syntax, problem-solving, and programming logic.
+The goal of these exercises is to build a strong understanding of **Python Functions**, improve problem-solving skills, and develop programming logic step by step.
 
-The questions are arranged from **basic to more challenging levels**. They cover creating lists, filtering data, applying conditions, working with strings, nested lists, and solving practical problems using list comprehensions.
+---
 
-This repository is part of my Python learning journey as I build my skills for **Data Analytics**.
+## 📚 Topic Covered
+
+### Functions
+
+The practice exercises cover:
+
+* Creating functions using `def`
+* Calling functions
+* Parameters and arguments
+* Positional arguments
+* Keyword arguments
+* Default parameters
+* `return` statements
+* `print()` vs `return`
+* Multiple parameters
+* Functions with lists
+* Functions with strings
+* Conditional logic inside functions
+* Loops inside functions
+* Local and global variables
+* Reusable functions
+* Function-based problem solving
+* Data-analysis-oriented functions
+* Breaking larger problems into smaller functions
 
 ---
 
 ## 🎯 Learning Objectives
 
-By completing these exercises, I aim to improve my understanding of:
+By completing these exercises, I aim to:
 
-* Creating lists using list comprehensions
-* Replacing traditional `for` loops with list comprehensions
-* Applying conditions using `if`
-* Using `if-else` expressions inside list comprehensions
-* Filtering elements from a list
-* Performing mathematical operations
-* Working with strings
-* Using built-in functions such as `len()` and `abs()`
-* Using `range()`
-* Working with indexes using `enumerate()`
-* Creating tuples using list comprehensions
-* Flattening nested lists
-* Building problem-solving and programming logic
-
----
-
-# 📚 What Are List Comprehensions?
-
-A **list comprehension** is a short and concise way to create a new list in Python.
-
-Instead of writing:
-
-```python
-numbers = [1, 2, 3, 4, 5]
-
-squares = []
-
-for number in numbers:
-    squares.append(number * number)
-
-print(squares)
-```
-
-We can write:
-
-```python
-numbers = [1, 2, 3, 4, 5]
-
-squares = [number * number for number in numbers]
-
-print(squares)
-```
-
-Output:
-
-```text
-[1, 4, 9, 16, 25]
-```
-
----
-
-# 🧠 Basic Syntax
-
-## Simple List Comprehension
-
-```python
-new_list = [expression for item in iterable]
-```
-
-Example:
-
-```python
-numbers = [1, 2, 3, 4, 5]
-
-squares = [number ** 2 for number in numbers]
-```
-
----
-
-## List Comprehension With `if`
-
-```python
-new_list = [expression for item in iterable if condition]
-```
-
-Example:
-
-```python
-numbers = [1, 2, 3, 4, 5, 6]
-
-even_numbers = [number for number in numbers if number % 2 == 0]
-```
-
-Output:
-
-```text
-[2, 4, 6]
-```
-
----
-
-## List Comprehension With `if-else`
-
-```python
-new_list = [value_if_true if condition else value_if_false for item in iterable]
-```
-
-Example:
-
-```python
-numbers = [1, 2, 3, 4, 5]
-
-result = ["Even" if number % 2 == 0 else "Odd" for number in numbers]
-```
-
-Output:
-
-```text
-['Odd', 'Even', 'Odd', 'Even', 'Odd']
-```
+* Understand how functions work in Python
+* Learn how to create reusable blocks of code
+* Understand the difference between parameters and arguments
+* Understand how values are passed into functions
+* Understand how `return` works
+* Learn when to use `print()` and when to use `return`
+* Improve logical thinking and problem-solving ability
+* Practice combining functions with lists, loops, and conditional statements
+* Start thinking about how functions can be applied to real-world data analysis problems
 
 ---
 
 # 📝 Practice Questions
 
-The repository contains **50 practice questions** divided into five sections.
+The exercises are divided into different difficulty levels.
 
-## 1️⃣ Basic List Comprehensions
+## 🟢 Level 1 — Function Basics
 
-This section focuses on the basic structure of list comprehensions.
+### Questions 1–10
+
+These exercises focus on the fundamentals of functions:
+
+* Creating a simple function
+* Calling a function
+* Using parameters
+* Returning values
+* Performing basic mathematical operations
 
 Topics include:
 
-* Creating lists using `range()`
-* Squaring numbers
-* Cubing numbers
-* Multiplying numbers
-* Adding values to list elements
-* Converting numbers to strings
-* Converting strings to uppercase and lowercase
-* Finding the length of strings
-
-**Questions:** 1–10
+* `def`
+* Function calls
+* Parameters
+* Arguments
+* `return`
 
 ---
 
-## 2️⃣ List Comprehensions With Conditions
+## 🟢 Level 2 — Parameters and Return Values
 
-This section focuses on filtering elements using conditions.
+### Questions 11–20
+
+These exercises introduce functions that perform calculations and return useful results.
 
 Topics include:
 
-* Even numbers
-* Odd numbers
-* Positive numbers
-* Negative numbers
-* Numbers within a specific range
-* Divisibility conditions
-* Filtering names based on length
-* Filtering words based on characters
+* Multiple parameters
+* Boolean return values
+* Conditional statements inside functions
+* Mathematical calculations
+* Comparing values
+* Returning different results
 
-**Questions:** 11–20
+Examples include:
+
+* Dividing numbers
+* Calculating areas
+* Checking even/odd numbers
+* Checking positive/negative numbers
+* Finding larger and smaller values
 
 ---
 
-## 3️⃣ List Comprehensions With `if-else`
+## 🟡 Level 3 — Default and Multiple Parameters
 
-This section focuses on applying different logic based on conditions.
+### Questions 21–30
+
+These exercises focus on making functions more flexible and reusable.
 
 Topics include:
 
-* Even or odd classification
-* Positive, negative, and zero classification
-* Pass or fail conditions
-* Adult or minor classification
-* High or low categorization
-* Mathematical transformations based on conditions
-* Applying discounts
-* Categorizing values
+* Default parameters
+* Multiple parameters
+* Calculations using percentages
+* Salary calculations
+* Profit calculations
+* Temperature conversion
+* Percentage calculations
 
-**Questions:** 21–30
+Examples include:
+
+```python
+calculate_discount(price, discount=10)
+```
+
+and:
+
+```python
+calculate_salary(basic_salary, bonus)
+```
 
 ---
 
-## 4️⃣ Working With Strings
+## 🟡 Level 4 — Functions + Lists
 
-This section focuses on using list comprehensions with string data.
+### Questions 31–40
+
+These exercises combine functions with Python lists.
 
 Topics include:
 
-* Converting text to uppercase
-* Converting text to lowercase
+* Processing lists inside functions
+* Calculating totals
+* Calculating averages
+* Finding maximum and minimum values
+* Counting values
+* Filtering values
+* Creating new lists
+* Working with positive and negative numbers
+
+Examples include:
+
+```python
+calculate_sum(numbers)
+```
+
+```python
+calculate_average(numbers)
+```
+
+```python
+find_maximum(numbers)
+```
+
+```python
+count_even(numbers)
+```
+
+---
+
+## 🟠 Level 5 — Logic Building With Functions
+
+### Questions 41–49
+
+These exercises focus more heavily on programming logic.
+
+Topics include:
+
+* String processing
+* Counting vowels
 * Reversing strings
-* Removing extra spaces
-* Filtering email addresses
-* Finding the first character
-* Finding the last character
-* Extracting first names
-* Finding string lengths
+* Palindrome checking
+* Counting words
+* Removing duplicates
+* Categorizing values
+* Combining multiple functions
+* Basic data analysis
 
-**Questions:** 31–40
-
----
-
-## 5️⃣ More Challenging Problems
-
-This section combines multiple concepts and focuses more on programming logic.
-
-Topics include:
-
-* Combining mathematical operations and conditions
-* Using `abs()`
-* Calculating proportions
-* Working with indexes using `enumerate()`
-* Flattening nested lists
-* Creating tuples
-* Applying multiple conditions
-* Categorizing sales data
-
-**Questions:** 41–50
+These exercises require breaking a problem into logical steps before writing the code.
 
 ---
 
-# 💻 Sample Solutions
+## 🔴 Level 6 — Advanced Logic / Data Analytics
 
-## Example 1: Square Every Number
+### Question 50
+
+### Website Visitors Analysis
+
+The final exercise combines:
+
+* Functions
+* Sets
+* Set operations
+* Multiple datasets
+* Data analysis logic
+
+The problem involves analyzing website visitors across three different days.
+
+The tasks include finding:
+
+* Unique visitors
+* Visitors who visited every day
+* Visitors who visited only one day
+* Total unique visitors
+* Visitors shared between specific days
+
+This exercise is designed to combine previously learned Python concepts into a more realistic data-analysis problem.
+
+---
+
+# 🧠 Key Concepts to Remember
+
+A function generally follows this structure:
 
 ```python
-numbers = [1, 2, 3, 4, 5]
+def function_name(parameters):
+    # logic
+    return result
+```
 
-squares = [number ** 2 for number in numbers]
+For example:
 
-print(squares)
+```python
+def calculate_profit(revenue, cost):
+    return revenue - cost
+```
+
+The function can then be reused:
+
+```python
+profit = calculate_profit(50000, 30000)
+
+print(profit)
 ```
 
 Output:
 
 ```text
-[1, 4, 9, 16, 25]
+20000
 ```
 
 ---
 
-## Example 2: Filter Even Numbers
+# 🔄 Function Execution Model
 
-```python
-numbers = [1, 2, 3, 4, 5, 6]
-
-even_numbers = [number for number in numbers if number % 2 == 0]
-
-print(even_numbers)
-```
-
-Output:
+A useful way to think about a function is:
 
 ```text
-[2, 4, 6]
+Input
+  ↓
+Function
+  ↓
+Processing / Logic
+  ↓
+Return
+  ↓
+Output
+```
+
+For example:
+
+```text
+Revenue = 50,000
+Cost = 30,000
+       ↓
+calculate_profit()
+       ↓
+50,000 - 30,000
+       ↓
+20,000
 ```
 
 ---
 
-## Example 3: Using `if-else`
+# 📌 Important Distinction
+
+One of the most important concepts in this topic is understanding the difference between `print()` and `return`.
+
+### `print()`
+
+Displays a value:
 
 ```python
-numbers = [1, 2, 3, 4, 5]
+def add(a, b):
+    print(a + b)
+```
 
-result = ["Even" if number % 2 == 0 else "Odd" for number in numbers]
+### `return`
+
+Sends a value back:
+
+```python
+def add(a, b):
+    return a + b
+```
+
+The returned value can then be stored and used:
+
+```python
+result = add(10, 20)
 
 print(result)
 ```
 
-Output:
-
-```text
-['Odd', 'Even', 'Odd', 'Even', 'Odd']
-```
-
----
-
-# 📂 Suggested Repository Structure
-
-```text
-list-comprehension-practice/
-│
-├── README.md
-│
-├── questions/
-│   ├── basic_questions.py
-│   ├── conditional_questions.py
-│   ├── if_else_questions.py
-│   ├── string_questions.py
-│   └── advanced_questions.py
-│
-└── solutions/
-    ├── basic_solutions.py
-    ├── conditional_solutions.py
-    ├── if_else_solutions.py
-    ├── string_solutions.py
-    └── advanced_solutions.py
-```
-
-You can also keep all questions and solutions in a single file while practicing:
-
-```text
-list_comprehension_practice.py
-```
-
----
-
-# 🚀 How to Use This Repository
-
-1. Clone or download the repository.
-
-2. Open the Python file in your preferred code editor.
-
-3. Read one question at a time.
-
-4. Try solving the problem yourself using a list comprehension.
-
-5. Run the code and check your output.
-
-6. Compare your solution with the expected output where provided.
-
-7. Move to the next question only after understanding the logic.
-
----
-
-# 🛠️ Requirements
-
-To run the exercises, you need:
-
-* Python 3.x
-* A code editor such as VS Code, PyCharm, or Jupyter Notebook
-
-No external libraries are required.
-
----
-
-# 📈 Topics Practiced
-
-```text
-Python
-│
-├── Lists
-├── For Loops
-├── List Comprehensions
-├── Conditional Statements
-│   ├── if
-│   ├── if-else
-│   └── Multiple Conditions
-│
-├── Strings
-│   ├── upper()
-│   ├── lower()
-│   ├── strip()
-│   ├── split()
-│   └── Slicing
-│
-├── Built-in Functions
-│   ├── len()
-│   ├── abs()
-│   ├── range()
-│   ├── enumerate()
-│   └── sum()
-│
-└── Problem Solving
-```
-
----
-
-# 🎯 Goal
-
-The goal of these exercises is not just to memorize list comprehension syntax.
-
-The main objective is to understand the logic behind:
-
-```text
-Iterable
-    ↓
-Loop through each item
-    ↓
-Apply an operation or condition
-    ↓
-Create a new list
-```
-
-By practicing these problems, I am working on writing cleaner and more concise Python code while strengthening my problem-solving skills.
+Understanding this distinction is essential for writing reusable functions.
 
 ---
 
 # 📊 Connection to Data Analytics
 
-List comprehensions are useful when working with data because they can help perform operations such as:
+Functions are extremely useful in Data Analytics because the same operation often needs to be performed repeatedly.
 
-* Cleaning text data
-* Transforming values
-* Filtering records
-* Categorizing data
-* Creating calculated values
-* Preparing data before analysis
+For example, a function can be created to:
 
-For example:
+* Clean text
+* Calculate averages
+* Calculate profit
+* Categorize customers
+* Validate data
+* Calculate KPIs
+* Transform values
+* Process lists
+* Analyze sales
+* Analyze website traffic
+
+Example:
 
 ```python
-sales = [1200, 450, 800, 1500, 300, 2000, 950]
-
-categories = [
-    "High" if sale >= 1500
-    else "Medium" if sale >= 800
-    else "Low"
-    for sale in sales
-]
-
-print(categories)
+def categorize_sales(sales):
+    if sales >= 100000:
+        return "Excellent"
+    elif sales >= 75000:
+        return "Good"
+    elif sales >= 50000:
+        return "Average"
+    else:
+        return "Needs Improvement"
 ```
 
-Output:
+A function like this can later be used with datasets and tools such as **Pandas**.
+
+---
+
+# 📂 Practice Structure
+
+The exercises can be organized in the repository like this:
 
 ```text
-['Medium', 'Low', 'Medium', 'High', 'Low', 'High', 'Medium']
+python-for-data-analytics/
+│
+├── functions/
+│   ├── 01_function_basics.py
+│   ├── 02_parameters_arguments.py
+│   ├── 03_return_values.py
+│   ├── 04_default_parameters.py
+│   ├── 05_functions_with_lists.py
+│   ├── 06_logic_building.py
+│   └── 07_data_analysis_functions.py
+│
+└── README.md
 ```
 
-These same logical concepts can later be applied when working with libraries such as **Pandas** and **NumPy**.
+---
+
+# 🚀 Learning Progression
+
+The overall learning progression for Functions is:
+
+```text
+Create a Function
+       ↓
+Call a Function
+       ↓
+Parameters
+       ↓
+Arguments
+       ↓
+Return Values
+       ↓
+Default Parameters
+       ↓
+Conditional Logic
+       ↓
+Functions + Lists
+       ↓
+Functions + Loops
+       ↓
+Functions + Strings
+       ↓
+Functions + Sets
+       ↓
+Multiple Functions
+       ↓
+Data Analysis Problems
+```
 
 ---
 
-# 📌 Progress
+# ✅ Practice Goal
 
-* [x] Basic List Comprehensions
-* [x] List Comprehensions With Conditions
-* [x] List Comprehensions With `if-else`
-* [x] String Operations
-* [x] Advanced Practice Problems
-* [ ] Complete all solutions independently
-* [ ] Review and optimize solutions
+The goal is not just to memorize function syntax.
+
+The main objective is to develop the ability to look at a problem and think:
+
+```text
+What is the task?
+       ↓
+What input do I have?
+       ↓
+What processing is required?
+       ↓
+Should I create a function?
+       ↓
+What parameters do I need?
+       ↓
+What should the function return?
+```
+
+This way of thinking will become increasingly important when working with **Python, Pandas, SQL, and Data Analytics projects**.
 
 ---
 
-# 👩‍💻 Author
+## 📈 Progress
 
-**Naila Iram**
-
-Aspiring Data Analyst | Python | SQL | Power BI | Data Analytics
+* [ ] Function Basics
+* [ ] Function Calls
+* [ ] Parameters
+* [ ] Arguments
+* [ ] Return Values
+* [ ] Positional Arguments
+* [ ] Keyword Arguments
+* [ ] Default Parameters
+* [ ] Functions with Lists
+* [ ] Functions with Strings
+* [ ] Functions with Conditional Statements
+* [ ] Functions with Loops
+* [ ] Logic-Building Problems
+* [ ] Data Analytics Functions
+* [ ] Complete all 50 exercises
 
 ---
 
-⭐ If you find this repository useful, feel free to star it!
+## 🏁 Practice Challenge
+
+**50 Functions Practice Questions**
+
+The exercises progress from simple function creation to more realistic data-analysis problems.
+
+The objective is to build **strong Python fundamentals and programming logic** before moving deeper into libraries such as **Pandas and NumPy**.
